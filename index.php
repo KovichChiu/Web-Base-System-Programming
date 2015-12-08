@@ -27,7 +27,7 @@
 				<!-- card 2 -->
 			<div class="card card-block card-info" style="color: white">
 				<h4 class="card-title">
-					新增 <font style="color: #FB0069"> 導覽列時間 </font> 
+					新增 <font style="color: #FB0069"> Navbar Date </font> 
 					<span class="label label-pill label-danger">0.1.1 版本</span> 
 				</h4>
 				<p class="card-text">

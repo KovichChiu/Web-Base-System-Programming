@@ -14,28 +14,17 @@
 				<!-- viewport 功能 -->
 			<div class="card card-block card-info" style="color: white">
 				<h4 class="card-title">
-					新增 <
-					<font style="color: #FB0069">viewport</font>
-					> 功能 
-					<span class="label label-pill label-danger">0.1.1 版本</span> 
+					0.1.1 版本更新
 				</h4>
-				<p class="card-text">
-					現在手機也可以瀏覽本站喔！
-				</p>
-				<p class="card-text text-right">2015年12月8日 22 : 51 發布</p>
+				<ol class="card-text">
+					<li> 新增 <<font color="#FB0069">viewport</font>> 功能 </li>
+					<li> 新增 <font color="#FB0069">Navbar Date</font> </li>
+					<li> 新增 <font color="#FB0069">About Modal</font> </li>
+					<li> 修正 <font color="#FB0069">更新發布樣式</font> </li>
+				</ol>
+				<p class="card-text text-right">2015年12月9日 00 : 02 發布</p>
 			</div>
 				<!-- card 2 -->
-			<div class="card card-block card-info" style="color: white">
-				<h4 class="card-title">
-					新增 <font style="color: #FB0069"> Navbar Date </font> 
-					<span class="label label-pill label-danger">0.1.1 版本</span> 
-				</h4>
-				<p class="card-text">
-					現在本站也可以確認時間囉！
-				</p>
-				<p class="card-text text-right">2015年12月8日 22 : 51 發布</p>
-			</div>
-				<!-- card 3 -->
 			<div class="card card-block">
 				<h4 class="card-title">Card title</h4>
 				<p class="card-text">
@@ -44,7 +33,7 @@
 				<a href="#" class="card-link">Card link</a>
 				<a href="#" class="card-link">Another link</a>
 			</div>
-				<!-- card 4 -->
+				<!-- card 3 -->
 			<div class="card card-block">
 				<h4 class="card-title">Card title</h4>
 				<p class="card-text">

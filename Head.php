@@ -1,6 +1,6 @@
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type">
-	<meta name="viewport" content="width=360px">
+	<meta name="viewport" content="width=360">
 	<!-- font-awesome-4.5.0 -->
 	<link rel=stylesheet type="text/css" href="font-awesome-4.5.0/css/font-awesome.css">
 

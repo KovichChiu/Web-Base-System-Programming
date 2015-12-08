@@ -6,7 +6,7 @@
 	<title> Web Course 2015 ver 0.1.0 by Kovich</title>
 	<body class="container">
 		<header style="padding: 20px 0px 0px 0px">
-			<h1 class="text-center"> Web Course 2015 <br><small> by Kovich <small> ver 0.1.1 </small> </small> </h1>
+			<h1 class="text-center"> 網頁程式設計2015 <br><small> by Kovich <small> ver 0.1.1 </small> </small> </h1>
 			<hr>
 			<?php include 'Inc_Navbar.php'; ?>
 		</header>

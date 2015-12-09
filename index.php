@@ -3,15 +3,25 @@
 	<?php 
 		include 'Head.php';
 	?>
-	<title> Web Course 2015 ver 0.1.0 by Kovich</title>
+	<title> Web Course 2015 ver 0.1.2 by Kovich</title>
 	<body class="container">
 		<header style="padding: 20px 0px 0px 0px">
-			<h1 class="text-center"> 網頁程式設計2015 <br><small> by Kovich <small> ver 0.1.1 </small> </small> </h1>
+			<h1 class="text-center"> 網頁系統開發2015 <br><small> by Kovich <small> ver 0.1.2 </small> </small> </h1>
 			<hr>
 			<?php include 'Inc_Navbar.php'; ?>
 		</header>
 		<section style="padding: 20px 0px 0px 0px">
-				<!-- viewport 功能 -->
+				<!-- 0.1.2 發布 -->
+			<div class="card card-block card-info" style="color: white">
+				<h4 class="card-title">
+					0.1.2 版本更新
+				</h4>
+				<ol class="card-text">
+					<li> 修正 0.1.1 版本 </li>
+				</ol>
+				<p class="card-text text-right">2015年12月9日 14 : 05 發布</p>
+			</div>
+				<!-- 0.1.1 發布 -->
 			<div class="card card-block card-info" style="color: white">
 				<h4 class="card-title">
 					0.1.1 版本更新
@@ -24,23 +34,15 @@
 				</ol>
 				<p class="card-text text-right">2015年12月9日 00 : 02 發布</p>
 			</div>
-				<!-- card 2 -->
-			<div class="card card-block">
-				<h4 class="card-title">Card title</h4>
-				<p class="card-text">
-					Some quick example text to build on the card title and make up the bulk of the card's content.
-				</p>
-				<a href="#" class="card-link">Card link</a>
-				<a href="#" class="card-link">Another link</a>
-			</div>
-				<!-- card 3 -->
-			<div class="card card-block">
-				<h4 class="card-title">Card title</h4>
-				<p class="card-text">
-					Some quick example text to build on the card title and make up the bulk of the card's content.
-				</p>
-				<a href="#" class="card-link">Card link</a>
-				<a href="#" class="card-link">Another link</a>
+				<!-- 0.1.0 發布 -->
+			<div class="card card-block card-info" style="color: white">
+				<h4 class="card-title">
+					0.1.0 版本
+				</h4>
+				<ol class="card-text">
+					<li> 建構 <font color="#FB0069">index.php</font> 頁面</li>
+				</ol>
+				<p class="card-text text-right">2015年12月8日 20 : 31 發布</p>
 			</div>
 		</section>
 		<footer style="padding: 20px 0px 0px 0px">

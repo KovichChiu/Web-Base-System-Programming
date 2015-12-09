@@ -11,7 +11,7 @@
   <a class="navbar-brand" href="index.php">KC Inc.</a>
   <ul class="nav navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="#">特徵</a>
+      <a class="nav-link" href="#">交易平台</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#">工作範圍</a>

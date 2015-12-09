@@ -8,13 +8,13 @@
   $y = $today['year'];
 ?>
 <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-  <a class="navbar-brand" href="index.php">KC Inc.</a>
+  <a class="navbar-brand" href="https://120.108.114.206/~kovich">KC Inc.</a>
   <ul class="nav navbar-nav">
     <li class="nav-item">
       <a class="nav-link" href="#">交易平台</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">工作範圍</a>
+      <a class="nav-link" href="https://120.108.114.206/~kovich/Opinion/">意見</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#" data-toggle="modal" data-target="#Modal_about">關於</a>
@@ -26,8 +26,6 @@
     </li>
   </ul>
 </nav>
-
-
 
 <!-- Modal_about -->
 <div class="modal fade" id="Modal_about" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

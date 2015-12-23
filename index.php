@@ -1,60 +1,50 @@
 <!DOCTYPE html>
 <html>
 	<?php 
+		include 'SQL_Conn/SQL_Connect.php';
 		include 'Head.php';
+		include 'Inc_Navbar.php';
+
+		$pageName = "home"; //pageID
+
+		$indexSQL = "SELECT `Number`, `Title`, `UD01`, `UD02`, `UD03`, `UD04`, `UD05`, `Time`
+					 FROM `newUD`
+					 ORDER BY `Number` DESC";
+		$indexRST = Mysql_query( $indexSQL );
 	?>
 	<body class="container">
-		<header style="padding: 20px 0px 0px 0px">
-			<h1 class="text-center"> 網頁系統開發2015 <br><small> by Kovich <small> ver 0.1.3 </small> </small> </h1>
-			<hr>
-			<?php include 'Inc_Navbar.php'; ?>
-		</header>
+		<?php include 'header.php'; ?>
+		<?php Navbar( $pageName ); ?>
 		<section style="padding: 20px 0px 0px 0px">
-				<!-- 0.1.3 發布 -->
-			<div class="card card-block card-info" style="color: white">
-				<h4 class="card-title">
-					0.1.3 版本更新
-				</h4>
-				<ol class="card-text">
-					<li> 效能提升 </li>
-					<li> 新增<font color="#FB0069">「意見」</font>平台，希望組員能多多利用。 </li>
-				</ol>
-				<p class="card-text text-right">2015年12月9日 23 : 57 發布</p>
-			</div>
-				<!-- 0.1.2 發布 -->
-			<div class="card card-block card-info" style="color: white">
-				<h4 class="card-title">
-					0.1.2 版本更新
-				</h4>
-				<ol class="card-text">
-					<li> 修正 0.1.1 版本 </li>
-				</ol>
-				<p class="card-text text-right">2015年12月9日 14 : 05 發布</p>
-			</div>
-				<!-- 0.1.1 發布 -->
-			<div class="card card-block card-info" style="color: white">
-				<h4 class="card-title">
-					0.1.1 版本更新
-				</h4>
-				<ol class="card-text">
-					<li> 新增 <<font color="#FB0069">viewport</font>> 功能 </li>
-					<li> 新增 <font color="#FB0069">Navbar Date</font> </li>
-					<li> 新增 <font color="#FB0069">About Modal</font> </li>
-					<li> 修正 <font color="#FB0069">更新發布樣式</font> </li>
-				</ol>
-				<p class="card-text text-right">2015年12月9日 00 : 02 發布</p>
-			</div>
-				<!-- 0.1.0 發布 -->
-			<div class="card card-block card-info" style="color: white">
-				<h4 class="card-title">
-					0.1.0 版本
-				</h4>
-				<ol class="card-text">
-					<li> 建構 <font color="#FB0069">index.php</font> 頁面</li>
-				</ol>
-				<p class="card-text text-right">2015年12月8日 20 : 31 發布</p>
-			</div>
+			<?php 
+				while( $indexROW = Mysql_fetch_array( $indexRST ) ){
+					echo '<div class="jumbotron" style="background-color: #5bc0de; color: white">';
+					echo '<h2>';
+					echo $indexROW['Title'];
+					echo '</h2>';
+					echo '<ol>';
+					echo '<li>'.$indexROW['UD01'].'</li>';
+
+					if(!empty( $indexROW['UD02'] ))
+						echo '<li>'.$indexROW['UD02'].'</li>';
+
+					if(!empty( $indexROW['UD03'] ))
+						echo '<li>'.$indexROW['UD03'].'</li>';
+
+					if(!empty( $indexROW['UD04'] ))
+						echo '<li>'.$indexROW['UD04'].'</li>';
+
+					if(!empty( $indexROW['UD05'] ))
+						echo '<li>'.$indexROW['UD05'].'</li>';
+
+					echo '</ol>';
+					echo '<p style="text-align: right">';
+					echo $indexROW['Time'];
+					echo ' 發布</p>';
+					echo '</div>';
+				}
+			?>
 		</section>
-		<?php include 'Footer.php'; ?>
 	</body>
+	<?php include 'Footer.php'; ?>
 </html>

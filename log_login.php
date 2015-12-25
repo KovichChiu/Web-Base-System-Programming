@@ -55,6 +55,7 @@
 					$_SESSION['Rights'] = $userROW['Rights'];
 					// echo '<script>alert("Welcome! '.$userROW['UserName'].'")</script>';
 					echo '<meta http-equiv="refresh" content="1; url=index.php" />';
+<<<<<<< HEAD
 				}else{
 					echo '<script>alert("Aren\'t You '.$userROW['UserName'].'?")</script>';
 					echo '<meta http-equiv="refresh" content="0; url=log_login.php" />';
@@ -62,6 +63,11 @@
 			}
 			if($userROW == 0){
 				echo '<script>alert("CAN NOT Find The Account!! Please Try Again!!")</script>';
+=======
+				}
+			}else{
+				echo '<script>alert("DO NOT Find The Account!! Please Try Again!!")</script>';
+>>>>>>> origin/master
 				echo '<meta http-equiv="refresh" content="0; url=log_login.php" />';
 			}
 		}else{

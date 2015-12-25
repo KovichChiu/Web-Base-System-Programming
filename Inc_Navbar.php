@@ -11,7 +11,11 @@
 
   
 ?>
+<<<<<<< HEAD
 <nav class="navbar navbar-default" style="color: red">
+=======
+<nav class="navbar navbar-default">
+>>>>>>> origin/master
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -21,9 +25,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+<<<<<<< HEAD
       <a class="navbar-brand" href="index.php">
         <img src="Img/Logo.png" alt="Kovich" style="width:23px">
       </a>
+=======
+      <a class="navbar-brand" href="http://120.108.114.206/~kovich">KC Inc.</a>
+>>>>>>> origin/master
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -35,12 +43,24 @@
         <!-- 交易平台 -->
         <li <?php if( $pageName == "transaction" ){ echo 'class="active"'; } ?> ><a href="#"> <i class="fa fa-shopping-cart"></i> 交易平台</a></li>
 
+<<<<<<< HEAD
         <!-- 日誌 -->
         <li <?php if( $pageName == "update" ){ echo 'class="active"'; } ?> ><a href="update_Log.php"> <i class="fa fa-calendar"></i> 日誌</a>
+=======
+        <!-- 意見 -->
+        <li <?php if( $pageName == "opinion" ){ echo 'class="active"'; } ?> ><a href="http://120.108.114.206/~kovich/Opinion/"> <i class="fa fa-info-circle"></i> 意見</a></li>
+>>>>>>> origin/master
 
         <!-- 關於 -->
         <li <?php if( $pageName == "about" ){ echo 'class="active"'; } ?> ><a href="#" data-toggle="modal" data-target="#Modal_about"> <i class="fa fa-bookmark-o"></i> 關於</a>
 
+<<<<<<< HEAD
+=======
+        <!-- 使用者管理 -->
+        <?php if($_SESSION['Rights'] == 1){ ?>
+          <li <?php if( $pageName == "user_management" ){ echo 'class="active"'; } ?> ><a href="#"> <i class="fa fa-users"></i> 使用者管理 </a>
+        <?php } ?>
+>>>>>>> origin/master
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <!-- 日期 -->
@@ -52,17 +72,27 @@
           </a>
           <?php if(isset( $_SESSION['Acc'] )){ ?>
             <ul class="dropdown-menu">
+<<<<<<< HEAD
               <li><a href="user_pswdMod.php" onclick="return confirm('確定進入密碼修改?');"> <i class="fa fa-pencil-square-o"></i> Modify Passwd</a></li>
               <li><a href="user_index.php"> <i class="fa fa-user"></i> Member Center </a></li>
               <?php if($_SESSION['Rights'] == 1){ ?>
                 <li><a href="admin_usersindex.php"> <i class="fa fa-users"></i> User Management </a>
               <?php } ?>
+=======
+              <li><a href="user_index.php"> <i class="fa fa-user"></i> User Control </a></li>
+              <li><a href="#">xxxxxxx</a></li>
+              <li><a href="#">ooooooo</a></li>
+>>>>>>> origin/master
               <li role="separator" class="divider"></li>
               <li><a href="log_logout.php"> <i class="fa fa-sign-out"></i> Log out</a></li>
             </ul>
           <?php }else{ ?>
             <ul class="dropdown-menu">
+<<<<<<< HEAD
               <li><a href="log_signup.php"> <i class="fa fa-user-plus"></i> New User? </a></li>
+=======
+              <li><a href="log_signup.php"> <i class="fa fa-external-link-square"></i> New User? </a></li>
+>>>>>>> origin/master
               <li role="separator" class="divider"></li>
               <li><a href="log_login.php"> <i class="fa fa-sign-in"></i> Log in </a></li>
             </ul>
